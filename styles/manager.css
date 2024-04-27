@@ -1,0 +1,101 @@
+::-webkit-scrollbar {width: 0.1px;float: left;position: absolute;}
+::-webkit-scrollbar-track {background-color: transparent;position: absolute;width: 0;}
+::-webkit-scrollbar-thumb {background-clip: content-box;position: absolute;background: rgb(131,58,180);background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(233, 135, 135) 50%, rgba(252,176,69,1) 100%);}
+::-webkit-scrollbar-thumb:hover {background-color: #a8bbbf;}
+#conttabl::-webkit-scrollbar {width: 2.2px;float: left;position: absolute;}
+#conttabl::-webkit-scrollbar-track {background-color: transparent;position: absolute;width: 0;}
+#conttabl::-webkit-scrollbar-thumb {background-clip: content-box;position: absolute;background: rgb(131,58,180);background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(233, 135, 135) 50%, rgba(252,176,69,1) 100%);}
+#conttabl::-webkit-scrollbar-thumb:hover {background-color: #a8bbbf;}
+
+.manM{
+    display: flex;
+    flex-wrap: wrap;
+    height: 88vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+#conttabl{
+    max-height: 160px;
+}
+.flexB{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    /* margin-top: -27%; */
+}
+.widthprob{
+    width: 100px;
+    word-wrap: break-word;
+    margin-right: 3px;
+}
+#mobile{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    /* margin-top: -27%; */
+}
+#hedMai{
+    transform:translateY(-100%);
+}
+#username{
+    width:33%;
+}
+#passbox{
+    width:17%;
+    justify-content: flex-end;
+}
+#savepass{
+    width:8%;
+    margin-top: 3px;
+}
+@media only screen and (max-width:900px){
+    #mobile{
+        flex-direction: column;
+        align-items:center;
+    }
+    #username{
+        width:50%;
+    }
+    #passbox{
+        width:38%;
+        justify-content: center;
+        margin-top: 5px;
+
+    }
+    #savepass{
+        width:20%;
+    }
+    .widthprob{
+        width: 40px;
+    }
+    #conttabl{
+        max-height: 150px;
+    }
+    
+}
+#savepass{
+    background-color: rgb(172, 250, 185);
+    border:2px solid rgba(121, 255, 172, 0.932)
+}
+#savepass:hover{
+    transform: translateY(1px);
+    transform: translateX(1px);
+    font-weight: 200;
+    cursor: pointer;
+    background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,0.5) 0%, rgb(233, 135, 135) 50%, rgba(252,176,69,0.5) 100%);
+}
+@media only screen and (max-height:480px){
+    #conttabl{
+        max-height: 80px;
+    }
+}
+@media only screen and (max-height:497px){
+    #hedMai{
+        transform:translateY(0);
+    }
+}
